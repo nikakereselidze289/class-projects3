@@ -1,0 +1,131 @@
+/* General Body Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to bottom, #f3e5f5, #e1bee7);
+  color: #333;
+}
+
+/* Header Navigation */
+header {
+  background: rgba(0, 0, 0, 0.8);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  background: #ce93d8;
+  color: black;
+}
+
+/* Main Content (Slides) */
+.slide {
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  line-height: 1.8;
+  animation: fadeIn 2s ease;
+}
+
+.slide h1 {
+  font-size: 36px;
+  color: #4a148c;
+}
+
+.slide p {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Photo Gallery */
+.photo-gallery {
+  padding: 50px 20px;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.photo-gallery h1 {
+  font-size: 36px;
+  color: #4a148c;
+  margin-bottom: 20px;
+}
+
+.photo-gallery .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.photo-frame {
+  border: 5px solid #ce93d8;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 250px;
+  height: 180px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 1.5s ease;
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-frame:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border-color: #7b1fa2;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #6a1b9a;
+  color: white;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
